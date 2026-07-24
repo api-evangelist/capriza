@@ -1,7 +1,24 @@
 aid: capriza
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/capriza.png
 name: Capriza
-description: Capriza is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Capriza was an enterprise mobility software company founded in 2011 in Palo Alto,
+  California, backed by a16z and others across roughly $73.5M in funding. Its platform took a
+  no-code approach to mobilizing workflows from legacy enterprise applications such as SAP, Oracle
+  and PeopleSoft by driving their existing user interfaces, explicitly WITHOUT requiring APIs, new
+  infrastructure or custom code. The company has permanently closed and never published a public API
+  surface, so this record is retained as a historical network entry rather than an enrichable
+  provider profile.
 url: https://raw.githubusercontent.com/api-evangelist/capriza/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +26,37 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-lifecycle: defunct
+x-lifecycle-note: 'Company permanently closed (founded 2011, Palo Alto; raised ~$73.5M).
+  Platform was a no-code approach that mobilized enterprise apps WITHOUT APIs, so no
+  public API surface ever existed. Re-verified 2026-07-20: capriza.com (104.21.52.29,
+  Cloudflare) has been sold and returns HTTP 200 for an unrelated WordPress 7.0.2 site
+  titled "Discover Top Tracking Apps, Lifestyle Tips, and Relationships Advices";
+  /.well-known/security.txt soft-404s (302) to that homepage and is NOT a real
+  security.txt; support.capriza.com and api./developer.capriza.com return NXDOMAIN;
+  the github.com/Capriza org now returns 404 (it held only a profile-config repo on
+  the 2026-07-18 pass). Search hits for Capriza API docs resolve to stale index
+  entries for the dead support host or to the unrelated Capri AI product. No API,
+  no artifacts to enrich; do not wire link pointers at capriza.com, which is now
+  third-party content.'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Enterprise Mobility
+- Legacy Modernization
+- No Code
+- Workflow Automation
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
